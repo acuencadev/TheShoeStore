@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ShoeStore</string>
+    <string name="app_name">The Shoe Store</string>
     <string name="hello_login_fragment">Hello Login fragment</string>
     <string name="hello_welcome_fragment">Hello Welcome fragment</string>
     <string name="hello_instruction_fragment">Hello Instructions fragment</string>
@@ -9,4 +9,7 @@
     <string name="password_label">Password</string>
     <string name="register_button">Register</string>
     <string name="login_button">Login</string>
+    <string name="instructions_label">Instructions</string>
+    <string name="welcome_message">This is a sample Android project that contains 5 screens and uses the Navigation libraries, Databinding, Safe-args, and ViewModels. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consectetur dolor dolorem fugit itaque iure nemo, nesciunt nobis perspiciatis possimus praesentium, quibusdam sed similique soluta tempora temporibus voluptatibus. Dolorem, laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae cumque error fugiat, harum incidunt iure laborum molestias nobis optio perspiciatis quas qui, quia recusandae rerum saepe sequi voluptate voluptates.</string>
+    <string name="instructions_button">See instructions</string>
 </resources>
