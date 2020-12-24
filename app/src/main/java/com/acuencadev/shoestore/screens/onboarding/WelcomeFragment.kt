@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.acuencadev.shoestore.R
 import com.acuencadev.shoestore.databinding.FragmentWelcomeBinding
+import com.acuencadev.shoestore.screens.login.LoginFragmentDirections
 
 /**
  * Fragment for the onboarding welcome screen of the app
@@ -24,6 +26,10 @@ class WelcomeFragment : Fragment() {
             container,
             false
         )
+
+        binding.instructionsButton.setOnClickListener {
+            findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionsFragment())
+        }
 
         return binding.root
     }
