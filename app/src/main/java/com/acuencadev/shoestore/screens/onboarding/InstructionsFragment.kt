@@ -5,15 +5,31 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.acuencadev.shoestore.R
+import com.acuencadev.shoestore.databinding.FragmentInstructionsBinding
 
 /**
  * Fragment for the onboarding instructions screen of the app
  */
 class InstructionsFragment : Fragment() {
 
+    private lateinit var binding: FragmentInstructionsBinding
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_instructions, container, false)
+        binding = DataBindingUtil.inflate(
+            inflater,
+            R.layout.fragment_instructions,
+            container,
+            false
+        )
+
+        binding.shoeListButton.setOnClickListener {
+            findNavController().navigate(InstructionsFragmentDirections.actionInstructionsFragmentToShoeListFragment())
+        }
+
+        return binding.root
     }
 }
