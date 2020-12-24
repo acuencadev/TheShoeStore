@@ -5,4 +5,8 @@
     <string name="hello_instruction_fragment">Hello Instructions fragment</string>
     <string name="hello_show_list_fragment">Hello Show List fragment</string>
     <string name="hello_show_details_fragment">Hello Shoe Details fragment</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="register_button">Register</string>
+    <string name="login_button">Login</string>
 </resources>
